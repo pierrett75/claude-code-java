@@ -5,7 +5,7 @@
     {
       "name": "claude-code-java",
       "source": "./",
-      "description": "Java 25 / Spring Boot 4 conventions: Spring Boot layering and clean code rules."
+      "description": "Java 25 / Spring Boot 4 conventions for Claude Code: Spring Boot layering, clean code, SOLID and security rules."
     }
   ]
 }

@@ -36,7 +36,7 @@ Apply these when writing or reviewing code. Fix what violates them; don't rewrit
 ## Values and types
 - No magic numbers or strings: named constants, enums, or `Duration` / `BigDecimal` with clear names.
 - Use small value-object records (`Email`, `Money`) where mixing up primitives is a real risk; validate in the compact constructor, including null.
-- Prefer records and immutability; avoid setters on new types.
+- Prefer records and immutability; avoid setters on new types (except JPA `@Entity` classes, which follow `spring-boot-patterns`).
 
 ## Comments
 - Comment WHY (business reason, workaround, ordering constraint), never WHAT the code does.
@@ -45,3 +45,5 @@ Apply these when writing or reviewing code. Fix what violates them; don't rewrit
 
 ## Review checklist
 Names clear? One job per method? Nesting flattened? Errors thrown, not swallowed? Magic values named? Duplication real? Comments explain why?
+
+Report each violation with: file and line, which rule it violates, and the smallest change that fixes it.
