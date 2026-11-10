@@ -1,0 +1,11 @@
+{
+  "name": "pierrett75-java",
+  "owner": { "name": "pierrett75" },
+  "plugins": [
+    {
+      "name": "claude-code-java",
+      "source": "./",
+      "description": "Java 25 / Spring Boot 4 conventions: Spring Boot layering and clean code rules."
+    }
+  ]
+}

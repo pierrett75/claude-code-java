@@ -1,0 +1,18 @@
+{
+  "name": "claude-code-java",
+  "description": "Java 25 / Spring Boot 4 conventions for Claude Code: Spring Boot layering, clean code, SOLID and security rules.",
+  "version": "0.3.0",
+  "author": {
+    "name": "pierrett75"
+  },
+  "repository": "https://github.com/pierrett75/claude-code-java",
+  "license": "MIT",
+  "keywords": [
+    "java",
+    "spring-boot",
+    "clean-code",
+    "solid",
+    "security",
+    "owasp"
+  ]
+}
