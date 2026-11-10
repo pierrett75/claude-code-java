@@ -1,9 +1,10 @@
 {
   "name": "pierrett75-java",
   "owner": { "name": "pierrett75" },
+  "description": "Java and Spring Boot plugins for Claude Code.",
   "plugins": [
     {
-      "name": "claude-code-java",
+      "name": "java-spring-conventions",
       "source": "./",
       "description": "Java 25 / Spring Boot 4 conventions for Claude Code: Spring Boot layering, clean code, SOLID and security rules."
     }

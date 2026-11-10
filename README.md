@@ -16,14 +16,14 @@ Claude Code plugin with my conventions for Java 25 / Spring Boot 4 projects.
 In Claude Code (any project):
 ```
 /plugin marketplace add C:\Users\pierr\project\claude-code-java
-/plugin install claude-code-java@pierrett75-java
+/plugin install java-spring-conventions@pierrett75-java
 ```
 `pierrett75-java` is the marketplace name from `.claude-plugin/marketplace.json`. Restart Claude Code (or run `/reload-plugins`) afterwards.
 
 ### Option B: install from GitHub (any computer)
 ```
 /plugin marketplace add pierrett75/claude-code-java
-/plugin install claude-code-java@pierrett75-java
+/plugin install java-spring-conventions@pierrett75-java
 ```
 
 ### Option C: try it for one session only (while editing skills)
@@ -35,7 +35,7 @@ Nothing is installed; the plugin is loaded just for this session. A `--plugin-di
 
 ### Check it's loaded
 - `/plugin` opens the plugin manager (installed plugins, enable/disable, uninstall).
-- Type `/claude-code-java:` and the four skills should be suggested.
+- Type `/java-spring-conventions:` and the four skills should be suggested.
 - `claude plugin validate C:\Users\pierr\project\claude-code-java` checks the manifest and structure.
 
 ## Using the skills
@@ -48,12 +48,12 @@ You don't have to call them. Claude sees each skill's `description` and loads th
 - "Check this endpoint for vulnerabilities" -> `security-audit`
 
 ### Explicitly
-Plugin skills are namespaced with the plugin name: `/claude-code-java:<skill-name>`, optionally followed by your request.
+Plugin skills are namespaced with the plugin name: `/java-spring-conventions:<skill-name>`, optionally followed by your request.
 ```
-/claude-code-java:spring-boot-patterns create CRUD for Product (name, price, stock)
-/claude-code-java:clean-code review src/main/java/com/example/order/OrderServiceImpl.java
-/claude-code-java:solid-principles check the payment package
-/claude-code-java:security-audit audit the whole project before release
+/java-spring-conventions:spring-boot-patterns create CRUD for Product (name, price, stock)
+/java-spring-conventions:clean-code review src/main/java/com/example/order/OrderServiceImpl.java
+/java-spring-conventions:solid-principles check the payment package
+/java-spring-conventions:security-audit audit the whole project before release
 ```
 Calling a skill explicitly is useful when Claude didn't pick it up automatically, or when you want a review against exactly these rules.
 

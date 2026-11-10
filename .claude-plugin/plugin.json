@@ -1,5 +1,5 @@
 {
-  "name": "claude-code-java",
+  "name": "java-spring-conventions",
   "description": "Java 25 / Spring Boot 4 conventions for Claude Code: Spring Boot layering, clean code, SOLID and security rules.",
   "version": "0.3.0",
   "author": {
